@@ -9,6 +9,10 @@
     flex-wrap: wrap;
 }
 
+li {
+    font-size: 0.8rem;
+}
+
 .subbox {
     background-color: lightskyblue;
     width: 50px;

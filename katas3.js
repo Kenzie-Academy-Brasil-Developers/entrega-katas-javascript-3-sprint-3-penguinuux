@@ -1,6 +1,6 @@
 const inputs = document.getElementsByTagName('input');
 
-inputs[0].style.height = '2rem'
+inputs[0].style.height = '1rem'
 
 const subboxes = document.getElementsByClassName('subbox');
 
@@ -60,7 +60,7 @@ function showResults(value){
     const item = document.createElement('li');
     const title = document.querySelector('h1');
     console.log(list, item, body);
-    item.innerText = value;
+    item.innerHTML = value;
 
     list.appendChild(item);
     title.appendChild(list);
@@ -75,8 +75,10 @@ function kata1() {
         value =+ i;
         array.push(value);
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata1();
 
 function kata2() {
     let value = 0;
@@ -85,8 +87,10 @@ function kata2() {
         value =+ i;
         array.push(value);
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata2();
 
 function kata3() {
     let value = 0;
@@ -95,8 +99,10 @@ function kata3() {
         value =+ i;
         array.push(value * (-1));
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata3();
 
 function kata4() {
     let value = 0;
@@ -105,8 +111,10 @@ function kata4() {
         value =+ i;
         array.push(value * (-1));
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata4();
 
 function kata5() {
     // cria a variável que armazenará os valores
@@ -123,8 +131,10 @@ function kata5() {
             array.push(i);
         }
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata5();
 
 function kata6() {
     // cria a variável que armazenará os valores
@@ -141,8 +151,10 @@ function kata6() {
             array.push(i);
         }
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata6();
 
 function kata7() {
     // cria a variável que armazenará os valores
@@ -159,24 +171,77 @@ function kata7() {
             array.push(i);
         }
     }
-    return array;
+    return showResults(array.join(" ,"));
 }
+
+kata7();
 
 function kata8() {
-    // implemente o código do kata 8 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar do número 100 ao 0
+    // verifica se o número atual é divisível por 3 ou 7
+    // se for, adiciona no array
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for(let i = 100; i >= 1; i--){
+        if(i % 3 === 0 || i % 7 === 0){
+            array.push(i);
+        }
+    }
+    return showResults(array.join(" ,"));
 }
+
+kata8();
 
 function kata9() {
-    // implemente o código do kata 9 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar do número 0 ao 100
+    // verifica se o número atual é multiplo de 5 e ímpar
+    // se for, adiciona no array
+    // retorna o array
+    
+    let value = 0;
+    let array = [];
+    for(i = 0; i <= 100; i++){
+        if(i % 5 === 0 && i % 2 != 0){
+            array.push(i);
+        }
+    }
+    return showResults(array.join(" ,"));
 }
+
+kata9();
 
 function kata10() {
-    // implemente o código do kata 10 aqui
+    return showResults(sampleArray.join(" ,"));
 }
 
+kata10();
+
 function kata11() {
-    // implemente o código do kata 11 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar cada item do array
+    // verifica se o número atual é par
+    // se for, adiciona no array
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for(let i = 0; i < sampleArray.length - 1; i++){
+        let current = sampleArray[i];
+        if(sampleArray[i] % 2 === 0){
+            array.push(sampleArray[i]);
+        }
+    }
+    return showResults(array.join(" ,"))
 }
+
+kata11();
 
 function kata12() {
     // implemente o código do kata 12 aqui
