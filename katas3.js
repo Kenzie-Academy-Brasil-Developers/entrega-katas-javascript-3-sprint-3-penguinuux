@@ -1,3 +1,57 @@
+const inputs = document.getElementsByTagName('input');
+
+inputs[0].style.height = '2rem'
+
+const subboxes = document.getElementsByClassName('subbox');
+
+const last = subboxes.length - 1;
+subboxes[last].style.border = '3px solid green';
+
+const inputPassword = document.getElementsByName('password')[0];
+inputPassword.type = 'password';
+
+inputPassword.style.border = '1px solid black';
+inputPassword.style.borderRadius = '10px'
+
+const div2 = document.querySelector('body > div:nth-child(2)');
+div2.classList.add('hidden');
+
+const subboxes2 = document.querySelectorAll('body .box .subbox');
+for(let i = 0; i < subboxes2.length; i++){
+    subboxes2[i].classList.add('teste');
+}
+
+// Adicionando elementos dinamicamente
+// Inserindo um parágrafo na div 'box_3'
+const divToAppend = document.getElementById('box_3');
+
+const paragraph = document.createElement('p');
+
+paragraph.innerText = 'Eu fui criado dinâmicamente';
+divToAppend.appendChild(paragraph);
+
+// Altera a altura da div 'box_3'
+divToAppend.style.height = '180px'
+
+// Inserindo uma div com a classe 'box' ao final do nossa página e
+// também inserir um botão nela
+
+const body = document.getElementsByTagName('body')[0];
+
+const newBox = document.createElement('div');
+newBox.classList.add('box');
+
+// -- Queremos criar mais um novo elemento
+const button = document.createElement('button');
+button.innerText = 'Click';
+
+// Lincar os elementos
+newBox.appendChild(button);
+body.appendChild(newBox);
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+// Aqui inicia Katas 3
+
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function kata1() {
