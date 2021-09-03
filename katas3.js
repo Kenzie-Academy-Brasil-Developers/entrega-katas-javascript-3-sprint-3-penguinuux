@@ -44,6 +44,7 @@ newBox.classList.add('box');
 // -- Queremos criar mais um novo elemento
 const button = document.createElement('button');
 button.innerText = 'Click';
+button.addEventListener('Click', showResults);
 
 // Lincar os elementos
 newBox.appendChild(button);
@@ -51,6 +52,19 @@ body.appendChild(newBox);
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 // Aqui inicia Katas 3
+
+// Criando função 'show results'
+
+function showResults(value){
+    const list = document.createElement('ul');
+    const item = document.createElement('li');
+    const title = document.querySelector('h1');
+    console.log(list, item, body);
+    item.innerText = value;
+
+    list.appendChild(item);
+    title.appendChild(list);
+}
 
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
