@@ -117,14 +117,12 @@ function kata4() {
 kata4();
 
 function kata5() {
-    // cria a variável que armazenará os valores
     // cria o array vazio que retornará os resultados
     // cria um laço for para iterar do número 25 a -25
     // verifica se o número atual é ímpar
     // se for ímpar, adiciona no array
     // retorna o array
 
-    let value = 0;
     let array = [];
     for(let i = 25; i >= -25; i--){
         if(i % 2 != 0){
@@ -137,14 +135,12 @@ function kata5() {
 kata5();
 
 function kata6() {
-    // cria a variável que armazenará os valores
     // cria o array vazio que retornará o resultado
     // cria um laço for para iterar do número 0 a 100
     // verifica se o número atual é divisível por 3
     // se for, adiciona no array
     // retorna o array
 
-    let value = 0;
     let array = [];
     for (let i = 1; i <= 100; i++){
         if(i % 3 === 0){
@@ -157,14 +153,12 @@ function kata6() {
 kata6();
 
 function kata7() {
-    // cria a variável que armazenará os valores
     // cria o array vazio que retornará o resultado
     // cria um laço for para iterar do número 0 a 100
     // verifica se o número atual é divisível por 7
     // se for, adiciona no array
     // retorna o array
 
-    let value = 0;
     let array = [];
     for (let i = 1; i <= 100; i++){
         if(i % 7 === 0){
@@ -177,14 +171,12 @@ function kata7() {
 kata7();
 
 function kata8() {
-    // cria a variável que armazenará os valores
     // cria o array vazio que retornará o resultado
     // cria um laço for para iterar do número 100 ao 0
     // verifica se o número atual é divisível por 3 ou 7
     // se for, adiciona no array
     // retorna o array
 
-    let value = 0;
     let array = [];
     for(let i = 100; i >= 1; i--){
         if(i % 3 === 0 || i % 7 === 0){
@@ -197,14 +189,12 @@ function kata8() {
 kata8();
 
 function kata9() {
-    // cria a variável que armazenará os valores
     // cria o array vazio que retornará o resultado
     // cria um laço for para iterar do número 0 ao 100
     // verifica se o número atual é multiplo de 5 e ímpar
     // se for, adiciona no array
     // retorna o array
     
-    let value = 0;
     let array = [];
     for(i = 0; i <= 100; i++){
         if(i % 5 === 0 && i % 2 != 0){
@@ -223,41 +213,90 @@ function kata10() {
 kata10();
 
 function kata11() {
-    // cria a variável que armazenará os valores
     // cria o array vazio que retornará o resultado
     // cria um laço for para iterar cada item do array
     // verifica se o número atual é par
     // se for, adiciona no array
     // retorna o array
 
-    let value = 0;
     let array = [];
-    for(let i = 0; i < sampleArray.length - 1; i++){
-        let current = sampleArray[i];
+    for(let i = 0; i < sampleArray.length; i++){
         if(sampleArray[i] % 2 === 0){
             array.push(sampleArray[i]);
         }
     }
-    return showResults(array.join(" ,"))
+    return showResults(array.join(" ,"));
 }
 
 kata11();
 
 function kata12() {
-    // implemente o código do kata 12 aqui
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar cada item do array
+    // verifica se o número atual é ímpar
+    // se for, adiciona no array
+    // retorna o array
+
+    let array = [];
+    for(let i = 0; i < sampleArray.length; i++){
+        if(sampleArray[i] % 2 != 0){
+            array.push(sampleArray[i]);
+        }
+    }
+    return showResults(array.join(" ,"));
 }
+
+kata12();
 
 function kata13() {
-    // implemente o código do kata 13 aqui
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar cada item do array
+    // verifica se o número atual é divisível por 8
+    // se for, adiciona no array
+    // retorna o array
+
+    let array = [];
+    for(let i = 0; i < sampleArray.length; i++){
+        if(sampleArray[i] % 8 === 0){
+            array.push(sampleArray[i]);
+        }
+    }
+    return showResults(array.join(" ,"));
 }
+
+kata13();
 
 function kata14() {
-    // implemente o código do kata 14 aqui
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar cada item do array
+    // eleva o número atual ao quadrado e adiciona no array
+    // retorna o array
+
+    let array = [];
+    for(let i = 0; i < sampleArray.length; i++){
+        array.push(sampleArray[i] ** 2);
+    }
+    return showResults(array.join(" ,"));
 }
 
+kata14();
+
 function kata15() {
-    // implemente o código do kata 15 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar cada item do array
+    // reatribui o valor do item atual a variável de armazenamento
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for(let i = 0; i < sampleArray.length; i++){
+        value += sampleArray[i];
+    }
+    return showResults(value);
 }
+
+kata15();
 
 function kata16() {
     // implemente o código do kata 16 aqui
