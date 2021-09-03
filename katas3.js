@@ -109,15 +109,57 @@ function kata4() {
 }
 
 function kata5() {
-    // implemente o código do kata 5 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará os resultados
+    // cria um laço for para iterar do número 25 a -25
+    // verifica se o número atual é ímpar
+    // se for ímpar, adiciona no array
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for(let i = 25; i >= -25; i--){
+        if(i % 2 != 0){
+            array.push(i);
+        }
+    }
+    return array;
 }
 
 function kata6() {
-    // implemente o código do kata 6 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar do número 0 a 100
+    // verifica se o número atual é divisível por 3
+    // se for, adiciona no array
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for (let i = 1; i <= 100; i++){
+        if(i % 3 === 0){
+            array.push(i);
+        }
+    }
+    return array;
 }
 
 function kata7() {
-    // implemente o código do kata 7 aqui
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar do número 0 a 100
+    // verifica se o número atual é divisível por 7
+    // se for, adiciona no array
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for (let i = 1; i <= 100; i++){
+        if(i % 7 === 0){
+            array.push(i);
+        }
+    }
+    return array;
 }
 
 function kata8() {
