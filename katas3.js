@@ -69,19 +69,43 @@ function showResults(value){
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function kata1() {
-    // implemente o código do kata 1 aqui
+    let value = 0;
+    let array = [];
+    for(let i = 1; i <= 25; i++){
+        value =+ i;
+        array.push(value);
+    }
+    return array;
 }
 
 function kata2() {
-    // implemente o código do kata 2 aqui
+    let value = 0;
+    let array = [];
+    for(let i = 25; i >= 1; i--){
+        value =+ i;
+        array.push(value);
+    }
+    return array;
 }
 
 function kata3() {
-    // implemente o código do kata 3 aqui
+    let value = 0;
+    let array = [];
+    for(let i = 1; i <= 25; i++){
+        value =+ i;
+        array.push(value * (-1));
+    }
+    return array;
 }
 
 function kata4() {
-    // implemente o código do kata 4 aqui
+    let value = 0;
+    let array = [];
+    for(let i = 25; i >= 1; i--){
+        value =+ i;
+        array.push(value * (-1));
+    }
+    return array;
 }
 
 function kata5() {
