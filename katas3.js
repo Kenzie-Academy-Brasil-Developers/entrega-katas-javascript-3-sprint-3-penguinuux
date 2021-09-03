@@ -1,12 +1,41 @@
+// Botão interativo
+// Seleciona o elemento
+const button = document.getElementById('button');
+
+// Adiciona a esculta do evento
+button.addEventListener('click', clicar);
+
+function clicar(){
+    kata1();
+    kata2();
+    kata3();
+    kata4();
+    kata5();
+    kata6();
+    kata7();
+    kata8();
+    kata9();
+    kata10();
+    kata11();
+    kata12();
+    kata13();
+    kata14();
+    kata15();
+    kata16();
+    kata17();
+    kata18();
+}
+
+
 // Aqui inicia Katas 3
 
 // Criando função 'show results'
 
 function showResults(value){
+    const body = document.querySelector('body');
+    const title = document.querySelector('h1');
     const list = document.createElement('ul');
     const item = document.createElement('li');
-    const title = document.querySelector('h1');
-    const body = document.querySelector('body');
     item.innerHTML = value;
 
     list.appendChild(item);
@@ -24,7 +53,7 @@ function kata1() {
     return showResults(array.join(" ,"));
 }
 
-kata1();
+// kata1();
 
 function kata2() {
     let array = [];
@@ -34,7 +63,7 @@ function kata2() {
     return showResults(array.join(" ,"));
 }
 
-kata2();
+// kata2();
 
 function kata3() {
     let array = [];
@@ -44,7 +73,7 @@ function kata3() {
     return showResults(array.join(" ,"));
 }
 
-kata3();
+// kata3();
 
 function kata4() {
     let array = [];
@@ -54,7 +83,7 @@ function kata4() {
     return showResults(array.join(" ,"));
 }
 
-kata4();
+// kata4();
 
 function kata5() {
     // cria o array vazio que retornará os resultados
@@ -72,7 +101,7 @@ function kata5() {
     return showResults(array.join(" ,"));
 }
 
-kata5();
+// kata5();
 
 function kata6() {
     // cria o array vazio que retornará o resultado
@@ -90,7 +119,7 @@ function kata6() {
     return showResults(array.join(" ,"));
 }
 
-kata6();
+// kata6();
 
 function kata7() {
     // cria o array vazio que retornará o resultado
@@ -108,7 +137,7 @@ function kata7() {
     return showResults(array.join(" ,"));
 }
 
-kata7();
+// kata7();
 
 function kata8() {
     // cria o array vazio que retornará o resultado
@@ -126,7 +155,7 @@ function kata8() {
     return showResults(array.join(" ,"));
 }
 
-kata8();
+// kata8();
 
 function kata9() {
     // cria o array vazio que retornará o resultado
@@ -144,13 +173,13 @@ function kata9() {
     return showResults(array.join(" ,"));
 }
 
-kata9();
+// kata9();
 
 function kata10() {
     return showResults(sampleArray.join(" ,"));
 }
 
-kata10();
+// kata10();
 
 function kata11() {
     // cria o array vazio que retornará o resultado
@@ -168,7 +197,7 @@ function kata11() {
     return showResults(array.join(" ,"));
 }
 
-kata11();
+// kata11();
 
 function kata12() {
     // cria o array vazio que retornará o resultado
@@ -186,7 +215,7 @@ function kata12() {
     return showResults(array.join(" ,"));
 }
 
-kata12();
+// kata12();
 
 function kata13() {
     // cria o array vazio que retornará o resultado
@@ -204,7 +233,7 @@ function kata13() {
     return showResults(array.join(" ,"));
 }
 
-kata13();
+// kata13();
 
 function kata14() {
     // cria o array vazio que retornará o resultado
@@ -219,7 +248,7 @@ function kata14() {
     return showResults(array.join(" ,"));
 }
 
-kata14();
+// kata14();
 
 function kata15() {
     // cria a variável que armazenará os valores
@@ -236,7 +265,7 @@ function kata15() {
     return showResults(value);
 }
 
-kata15();
+// kata15();
 
 function kata16() {
     // cria a variável que armazenará os valores
@@ -253,7 +282,7 @@ function kata16() {
     return showResults(value);
 }
 
-kata16();
+// kata16();
 
 function kata17() {
     // cria o array vazio que retornará o resultado
@@ -278,7 +307,7 @@ function kata17() {
     return showResults(lowerValue);
 }
 
-kata17();
+// kata17();
 
 function kata18() {
     // cria o array vazio que retornará o resultado
@@ -303,7 +332,7 @@ function kata18() {
     return showResults(lowerValue);
 }
 
-kata18();
+// kata18();
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
