@@ -69,11 +69,9 @@ function showResults(value){
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function kata1() {
-    let value = 0;
     let array = [];
     for(let i = 1; i <= 25; i++){
-        value =+ i;
-        array.push(value);
+        array.push(i);
     }
     return showResults(array.join(" ,"));
 }
@@ -81,11 +79,9 @@ function kata1() {
 kata1();
 
 function kata2() {
-    let value = 0;
     let array = [];
     for(let i = 25; i >= 1; i--){
-        value =+ i;
-        array.push(value);
+        array.push(i);
     }
     return showResults(array.join(" ,"));
 }
@@ -93,11 +89,9 @@ function kata2() {
 kata2();
 
 function kata3() {
-    let value = 0;
     let array = [];
     for(let i = 1; i <= 25; i++){
-        value =+ i;
-        array.push(value * (-1));
+        array.push(i * (-1));
     }
     return showResults(array.join(" ,"));
 }
@@ -105,11 +99,9 @@ function kata3() {
 kata3();
 
 function kata4() {
-    let value = 0;
     let array = [];
     for(let i = 25; i >= 1; i--){
-        value =+ i;
-        array.push(value * (-1));
+        array.push(i * (-1));
     }
     return showResults(array.join(" ,"));
 }
@@ -285,6 +277,23 @@ function kata15() {
     // cria a variável que armazenará os valores
     // cria o array vazio que retornará o resultado
     // cria um laço for para iterar cada item do array
+    // reatribui o valor da variável de laço a variável de armazenamento
+    // retorna o array
+
+    let value = 0;
+    let array = [];
+    for(let i = 1; i <= 20; i++){
+        value += i; 
+    }
+    return showResults(value);
+}
+
+kata15();
+
+function kata16() {
+    // cria a variável que armazenará os valores
+    // cria o array vazio que retornará o resultado
+    // cria um laço for para iterar cada item do array
     // reatribui o valor do item atual a variável de armazenamento
     // retorna o array
 
@@ -296,19 +305,57 @@ function kata15() {
     return showResults(value);
 }
 
-kata15();
-
-function kata16() {
-    // implemente o código do kata 16 aqui
-}
+kata16();
 
 function kata17() {
-    // implemente o código do kata 17 aqui
+    // cria o array vazio que retornará o resultado
+    // cria uma variável que armazenará o menor valor encontrado
+    // a variável terá o valor inicial do primeiro índice do array
+    // cria um laço for para iterar cada item do sampleArray
+    // verifica qual é o menor, subtraindo a variável lowerValue com current
+    // se o resultado der negativo (menor que 0), mantém o valor dar variável lowerValue
+    // se o resultado der positivo (maior que 0), reatribui o valor do item atual(current) a lowerValue
+    // retorna lowerValue
+
+    let array = [];
+    let lowerValue = sampleArray[0]
+    for(let i = 1; i < sampleArray.length; i++){
+        let current = sampleArray[i];
+        if(lowerValue - current < 0){
+            lowerValue;
+        } else {
+            lowerValue = current;
+        }
+    }
+    return showResults(lowerValue);
 }
 
+kata17();
+
 function kata18() {
-    // implemente o código do kata 18 aqui
+    // cria o array vazio que retornará o resultado
+    // cria uma variável que armazenará o menor valor encontrado
+    // a variável terá o valor inicial do primeiro índice do array
+    // cria um laço for para iterar cada item do sampleArray
+    // verifica qual é o menor, subtraindo a variável lowerValue com current
+    // se o resultado der negativo (menor que 0), reatribui o valor do item atual(current) a lowerValue
+    // se o resultado der positivo (maior que 0), mantém o valor da variável lowerValue 
+    // retorna lowerValue
+
+    let array = [];
+    let lowerValue = sampleArray[0]
+    for(let i = 1; i < sampleArray.length; i++){
+        let current = sampleArray[i];
+        if(lowerValue - current < 0){
+            lowerValue = current;
+        } else {
+            lowerValue;
+        }
+    }
+    return showResults(lowerValue);
 }
+
+kata18();
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
